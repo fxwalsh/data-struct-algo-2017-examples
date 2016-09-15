@@ -11,6 +11,7 @@ public class Tricky {
 	  Point temp = arg1;
 	  arg1 = arg2;
 	  arg2 = temp;
+	  arg1.x=200;
 	}
 	
 	public static void main(String [] args)
