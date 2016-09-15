@@ -32,8 +32,9 @@ import java.util.Random;
  *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
+ *  @author FXWALSH
  */
-public class Counter implements Comparable<Counter> {
+public class Counter{
 
     private final String name;     // counter name
     private int count = 0;         // current value
@@ -72,23 +73,6 @@ public class Counter implements Comparable<Counter> {
         return count + " " + name;
     } 
 
-    /**
-     * Compares this counter to the specified counter.
-     *
-     * @param  that the other counter
-     * @return {@code 0} if the value of this counter equals
-     *         the value of that counter; a negative integer if
-     *         the value of this counter is less than the value of
-     *         that counter; and a positive integer if the value
-     *         of this counter is greater than the value of that
-     *         counter
-     */
-    @Override
-    public int compareTo(Counter that) {
-        if      (this.count < that.count) return -1;
-        else if (this.count > that.count) return +1;
-        else                              return  0;
-    }
 
 
     /**
