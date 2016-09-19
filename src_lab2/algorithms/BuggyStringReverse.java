@@ -22,11 +22,10 @@ public class BuggyStringReverse {
 		// initiate vars
 		String rev = "";
 
-		int counter = 0;
-
-		for (int i = 0; i < s.length(); i++) {
-			rev += s.charAt(s.length() - counter);
-			counter++;
+		//solution: use index  i in the for loop to process the string
+		//Remember there's more than 1 solution!
+		for (int i = 1; i <= s.length(); i++) {   // start at one
+			rev += s.charAt(s.length() - i); 	
 		}
 		return rev;
 	}
