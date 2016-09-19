@@ -1,11 +1,26 @@
 package algorithms;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
 
 import java.util.List;
 
 import org.junit.Test;
 
+/**
+ * Simple test for class implementing WordSearch Interface according to
+ * assignment specification. This Test should work "as is". 
+ * Note the methods throw exception. This is to handle students who throw 
+ * rather than catch exceptions in their methods. 
+ * Please try to test your exception handling in other tests.
+ * Passing this unit test does not guarantee your methods work correctly. Please feel free to create
+ * your own tests.
+ * 
+ * @author Frank
+ * 
+ * 
+ */
 public class WordListTest {
 
 	private static final String url = "http://dl.dropbox.com/u/18678304/2011/BSc2/words.txt";
@@ -37,6 +52,9 @@ public class WordListTest {
 		String s = "umb";
 
 		wordList = new WordList(url);
+		
+		wordList.addString(s);
+		
 		List<String> resultList = wordList.getSubstringList(s);
 
 		// check that the search returned some result(i.e. there is a match
