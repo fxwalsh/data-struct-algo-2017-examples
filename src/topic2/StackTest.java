@@ -53,6 +53,7 @@ public class StackTest {
 		String testStr = new String("test");
 		testStack.push(testStr);
 		assertEquals(testStr, testStack.pop());
+		assertEquals(0.1,0.1,0.1);
 		try {
 			testStack.pop();
 			fail("Pop should throw exception");
