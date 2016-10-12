@@ -13,20 +13,18 @@
 public class ThrowEggsBetterMain {
 
 	public static void main(String[] args) {
-		int n = args.length;
+		
 		int lower = 0;
-		int upper = n;
+		int upper = 0;
 		double i = 1.0;
 
-		// Find upper bound from floor by increasing by power of 2;
-		upper = new Double(Math.pow(2.0, i)).intValue();
-
+		// Find upper bound from floor by doubling upper limit until an egg breaks;
 		while (args[upper].equals("o")) {
 			lower = upper;
-			upper = new Double(Math.pow(2.0, ++i)).intValue();
+			upper = new Double(Math.pow(2.0, i++)).intValue();
 		}
 
-		// F lies between 2^i-1 and 2^i
+		// now F lies between 2^i-1 and 2^i so binary search this area
 		while (upper - lower > 1) {
 			int pos = (upper - lower) / 2 + lower;
 			if (args[pos].equals("b"))
