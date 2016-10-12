@@ -24,7 +24,6 @@ public class ThrowEggsMain {
 				lower=pos;	
 		}
 		
-		
 		System.out.println(lower);
 		
 				
