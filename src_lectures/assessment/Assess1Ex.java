@@ -1,4 +1,4 @@
-package examples;
+package assessment;
 
 import java.util.Arrays;
 
