@@ -15,6 +15,7 @@ public class MergeSortModified {
 
 		for (int i = 0; i < values.length; i++)
 			this.unsortedItems[i] = values[i];
+		
 		mergesort(0, number - 1);
 	}
 
@@ -50,7 +51,8 @@ public class MergeSortModified {
 				//*************************************************************
 				// adding value from left side implies all remaining values in
 				// right side are
-				// greater. Therefore Add number of remaining values to count
+				// greater. Therefore, add number of remaining values IN THE RIGHT 
+				// SIDE 
 				// (from j+1 to high).
 				//*************************************************************
 				items[k].count += high - j + 1;
