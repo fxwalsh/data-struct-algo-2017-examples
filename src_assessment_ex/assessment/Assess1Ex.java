@@ -1,6 +1,10 @@
 package assessment;
 
 import java.util.Arrays;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
 
 public class Assess1Ex {
 
@@ -18,13 +22,14 @@ public class Assess1Ex {
 		return cnt;
 	}
 
-	public static void main(String[] args) {
+	@Test
+	public void testMystery() {
 
 		int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 		int target = 6;
 
-		System.out.println(mystery(target, a));
+		assertEquals(mystery(target, a),1);
 
 	}
 

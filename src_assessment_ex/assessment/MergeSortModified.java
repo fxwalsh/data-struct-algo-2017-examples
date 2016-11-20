@@ -1,5 +1,9 @@
 package assessment;
 
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
 public class MergeSortModified {
 	private MergeSortModified.Item[] items;
 	private MergeSortModified.Item[] helper;

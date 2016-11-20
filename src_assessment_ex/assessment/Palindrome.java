@@ -2,19 +2,21 @@ package assessment;
 
 import com.google.common.base.Preconditions;
 
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
 public class Palindrome {
 
-	public static void main(String[] args) {
+	@Test
+	public void testPalindrome() {
 		//recursive test
-		if(isPalindrome("radar")) System.out.println("radar is a palendrome");
-		if(!isPalindrome("radsr")) System.out.println("radsr is NOT a palendrome");
+		assertTrue(isPalindrome("radar"));
+		assertFalse(isPalindrome("radsr"));
 		
 		//non recursive test
-		if(isPalindromeNonRecursive("radar")) System.out.println("radar is a palendrome");
-		if(!isPalindromeNonRecursive("radsr")) System.out.println("radsr is NOT a palendrome");
-		
-		//should throw exception
-		if(isPalindromeNonRecursive("")) System.out.println("radar is a palendrome");	
+		assertTrue(isPalindromeNonRecursive("radar"));
+		assertFalse(isPalindromeNonRecursive("radsr"));
 
 	}
 	

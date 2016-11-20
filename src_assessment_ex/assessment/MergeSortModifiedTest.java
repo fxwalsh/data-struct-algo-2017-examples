@@ -14,8 +14,8 @@ import assessment.MergeSortModified.Item;
 public class MergeSortModifiedTest {
 
 	private MergeSortModified.Item[] numbers;
-	private final static int SIZE = 7;
-	private final static int MAX = 20;
+	private final static int SIZE = 15;
+	private final static int MAX = 40;
 
 	@Before
 	public void setUp() throws Exception {
@@ -37,6 +37,7 @@ public class MergeSortModifiedTest {
 		long elapsedTime = stopTime - startTime;
 		System.out.println("Mergesort " + elapsedTime);
 
+		//check it's sorted.
 		for (int i = 0; i < numbers.length - 1; i++) {
 			if (numbers[i].value.compareTo(numbers[i + 1].value) > 0) {
 				fail("Should not happen");
