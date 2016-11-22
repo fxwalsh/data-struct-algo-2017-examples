@@ -1,7 +1,9 @@
 package assessment;
 
-
-
+/**
+ * Bad Comparator solution from sample Assessment.
+ *
+ */
 public class Balance implements Comparable<Balance> {
 
 	public Balance(double amount) {
@@ -20,15 +22,16 @@ public class Balance implements Comparable<Balance> {
 	}
 
 	public static void main(String[] args) {
-		Balance a,b,c;
-		
-		a=new Balance(1.0);
-		b=new Balance(1.03);
-		c=new Balance(1.06);
-		
-		if (a.compareTo(b)==0)
-			if (b.compareTo(c)==0)
-				if(a.compareTo(c)==0) System.out.println("Transitive");
+		Balance a, b, c;
+
+		a = new Balance(1.0);
+		b = new Balance(1.03);
+		c = new Balance(1.06);
+
+		if (a.compareTo(b) == 0)
+			if (b.compareTo(c) == 0)
+				if (a.compareTo(c) == 0)
+					System.out.println("Transitive");
 				else
 					System.out.println("NOT Transitive. ABORT. ABORT!!!");
 

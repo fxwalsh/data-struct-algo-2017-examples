@@ -6,6 +6,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 
+/**
+ * Solution to part (e) to Question 1 in sample assessment problems.
+ * Original is qubic efficiency class. 
+ * This improvement makes it n^2log(n)
+ */
 public class Assess1Ex {
 
 	public static int mystery(int target, int[] a) {
