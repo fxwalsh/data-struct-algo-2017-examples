@@ -2,10 +2,8 @@ package assessment;
 
 import static org.junit.Assert.*;
 
-import java.util.Arrays;
 import java.util.Random;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,8 +12,8 @@ import assessment.MergeSortModified.Item;
 public class MergeSortModifiedTest {
 
 	private MergeSortModified.Item[] numbers;
-	private final static int SIZE = 15;
-	private final static int MAX = 40;
+	private final static int SIZE = 5;
+	private final static int MAX = 10;
 
 	@Before
 	public void setUp() throws Exception {
@@ -37,7 +35,7 @@ public class MergeSortModifiedTest {
 		long elapsedTime = stopTime - startTime;
 		System.out.println("Mergesort " + elapsedTime);
 
-		//check it's sorted.
+		// check it's sorted.
 		for (int i = 0; i < numbers.length - 1; i++) {
 			if (numbers[i].value.compareTo(numbers[i + 1].value) > 0) {
 				fail("Should not happen");

@@ -13,16 +13,18 @@ public class Palindrome {
 		//recursive test
 		assertTrue(isPalindrome("radar"));
 		assertFalse(isPalindrome("radsr"));
+		assertTrue(isPalindrome("abba"));
 		
 		//non recursive test
 		assertTrue(isPalindromeNonRecursive("radar"));
 		assertFalse(isPalindromeNonRecursive("radsr"));
+		assertTrue(isPalindromeNonRecursive("abba"));
 
 	}
 	
 	public static boolean isPalindrome(String s){
 		Preconditions.checkNotNull(s, "Cannot check a null string is a palindrome");
-		Preconditions.checkArgument(!s.isEmpty(), "Cannot check an empty string");
+	//	Preconditions.checkArgument(!s.isEmpty(), "Cannot check an empty string"); 
 	
 		int len=s.length();
 		if (len<=1) return true;
