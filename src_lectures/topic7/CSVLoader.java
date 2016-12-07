@@ -22,7 +22,7 @@ public class CSVLoader {
 				String age = userTokens[3];
 				String gender = userTokens[4];
 				String occupation = userTokens[6];
-				users.add(new User(firstName, lastName, gender, age, occupation));
+				users.add(new User(Long.parseLong(id), firstName, lastName, gender, age, occupation));
 			} else {
 				throw new Exception("Invalid member length: " + userTokens.length);
 			}

@@ -15,8 +15,8 @@ public class User {
 	public String occupation;
 	public List<Rating> ratings = new ArrayList<>();
 
-	public User(String firstName, String lastName, String gender, String age, String occupation) {
-		this.id = counter++;
+	public User(Long id, String firstName, String lastName, String gender, String age, String occupation) {
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.gender = gender;
