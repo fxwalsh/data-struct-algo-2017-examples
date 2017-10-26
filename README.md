@@ -1,3 +1,3 @@
-# algorithms-2016-examples
+# algorithms-2017-examples
 
 Examples and lab solutions.
